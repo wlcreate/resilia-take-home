@@ -3,7 +3,7 @@ import "./App.css";
 import NotificationsContainer from "./components/Notifications/NotificationsContainer";
 
 function App() {
-  let [notifications, setNotifications] = useState([]);
+  const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
     fetch(`http://localhost:3000/notifications`, {

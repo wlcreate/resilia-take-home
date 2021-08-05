@@ -1,6 +1,6 @@
 const Notification = ({ notificationData }) => {
   return (
-    <div key={notificationData.id}>
+    <div>
       <h2>{notificationData.title}</h2>
       <p>{notificationData.details}</p>
     </div>

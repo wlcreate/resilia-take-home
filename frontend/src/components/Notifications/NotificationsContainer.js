@@ -5,7 +5,12 @@ const NotificationsContainer = ({ notifications }) => {
     <div>
       {notifications &&
         notifications.map((notificationData) => {
-          return <Notification notificationData={notificationData} />;
+          return (
+            <Notification
+              key={notificationData.id}
+              notificationData={notificationData}
+            />
+          );
         })}
     </div>
   );
