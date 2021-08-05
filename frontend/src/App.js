@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <Header />
       <h1 className="App-heading">Notifications</h1>
       <NotificationsContainer notifications={notifications} />

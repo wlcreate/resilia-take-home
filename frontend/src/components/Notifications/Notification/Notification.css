@@ -1,9 +1,8 @@
 .Notification-div {
-  width: 450px;
+  width: 315px;
   padding: 15px;
   padding-bottom: 5px;
   border-radius: 10px;
-  border: 1px solid #eaeaea;
   background-color: #043c7c;
 }
 
@@ -24,8 +23,8 @@
 }
 
 .Notification-toggle {
-  width: auto;
-  float: right;
-  cursor: pointer;
   color: #42d969;
+  cursor: pointer;
+  float: right;
+  font-weight: 450;
 }
