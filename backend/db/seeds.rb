@@ -7,3 +7,5 @@ notification_3 = Notification.create!(title: "Marketing Dept Meeting", details: 
 notification_4 = Notification.create!(title: "Donor Meeting", details: "Meeting with X Foundation on donating to upcoming event.")
 notification_5 = Notification.create!(title: "Grant Applications", details: "Work with X on grant applications and materials.")
 notification_6 = Notification.create!(title: "Social Media Strategy", details: "Discuss new social media strategy.")
+
+puts "Seed data has been added!"
