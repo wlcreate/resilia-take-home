@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import NotificationsContainer from "./components/Notifications/NotificationsContainer";
 
 function App() {
   let [notifications, setNotifications] = useState([]);
@@ -17,17 +18,7 @@ function App() {
   return (
     <div>
       <header>Resilia Take Home</header>
-      <div>
-        {notifications &&
-          notifications.map((notificationData) => {
-            return (
-              <div key={notificationData.id}>
-                <h2>{notificationData.title}</h2>
-                <p>{notificationData.details}</p>
-              </div>
-            );
-          })}
-      </div>
+      <NotificationsContainer notifications={notifications} />
     </div>
   );
 }
