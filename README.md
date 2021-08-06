@@ -101,7 +101,7 @@ npm start
 **Note**: For convenience, it's important to start the backend (Rails) server first. By doing so, Rails will be available at `localhost:3000` and then the frontend (React) will change to a different port after prompting you in the terminal (simply type `y` once the prompt appears). You will then be able to view the frontend at `localhost:3001`.
 
 ## Solution Formulation
-I chose my tech stack because I am most familiar and comfortable with it, especially because I have not created from scratch a backend with a different database yet. 
+I chose my tech stack because I am most familiar and comfortable with it. 
 
 That said, what I like most about Rails is how easy it is to create seed data and see the schema and migrations. Since there is only one model (Notification) and therefore no relations, I decided to not include [Serializers](https://github.com/rails-api/active_model_serializers) and found no reason to add anything within the model. On the other hand, since the requirements specified for the notifications to be sent from the API, I only have one `get` route that, through the `NotificationsController`, sends all the notifications with the `index` method when a request is made.
 
