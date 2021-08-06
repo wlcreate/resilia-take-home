@@ -2,6 +2,9 @@
 
 The following is repeated from the main repo README, however in case it is easier to read the backend's information separately from the frontend I have decided to include this README.
 
+## Description
+This API has only one route; it can receive `get` requests to `/notifications`. Once it receives the request, the `NotificationsController` takes over and with the `index` method, sends back as JSON all of the notifications. The `Notification` model has two attributes, "title" and "details" which are both strings. 
+
 ## Tech Stack
 
 - Ruby on Rails
@@ -66,3 +69,9 @@ rails s
 ```
 
 - Open http://localhost:3000/ with your browser to see that you have Rails running
+
+## Solution Formulation
+
+I chose my tech stack because I am most familiar and comfortable with it. 
+
+That said, what I like most about Rails is how easy it is to create seed data and see the schema and migrations. Since there is only one model (Notification) and therefore no relations, I decided to not include [Serializers](https://github.com/rails-api/active_model_serializers) and found no reason to add anything within the model. On the other hand, since the requirements specified for the notifications to be sent from the API, I only have one `get` route that, through the `NotificationsController`, sends all the notifications with the `index` method when a request is made.
