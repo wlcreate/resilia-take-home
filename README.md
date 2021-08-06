@@ -10,7 +10,7 @@
 
 - Frontend: React/CSS
 - Backend: Ruby on Rails
-- Database: Postgres
+- Database: PostgreSQL
 
 ## Getting Started
 
